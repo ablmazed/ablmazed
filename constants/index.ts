@@ -92,17 +92,17 @@ export const SOCIALS = [
   {
     name: "Instagram",
     icon: RxInstagramLogo,
-    link: "https://instagram.com/ablmazed",
+    link: "https://instagram.com",
   },
   {
     name: "Facebook",
     icon: FaFacebook,
-    link: "https://facebook.com/ablmazed",
+    link: "https://facebook.com",
   },
   {
     name: "Twitter",
     icon: RxTwitterLogo,
-    link: "https://twitter.com/ablmazed",
+    link: "https://twitter.com",
   },
 ] as const;
 
@@ -248,6 +248,15 @@ export const FULLSTACK_SKILL = [
   },
 ] as const;
 
+export const OTHER_SKILL = [
+  {
+    skill_name: "Go",
+    image: "go.png",
+    width: 60,
+    height: 60,
+  },
+] as const;
+
 export const PROJECTS = [
   {
     title: "Modern Next.js 14 Portfolio",
@@ -279,17 +288,17 @@ export const FOOTER_DATA = [
       {
         name: "YouTube",
         icon: FaYoutube,
-        link: "https://youtube.com/ablmazed",
+        link: "https://youtube.com",
       },
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com/ablmazed",
+        link: "https://github.com",
       },
       {
         name: "Discord",
         icon: RxDiscordLogo,
-        link: "https://discord.com/ablmazed",
+        link: "https://discord.com",
       },
     ],
   },
@@ -299,17 +308,17 @@ export const FOOTER_DATA = [
       {
         name: "Instagram",
         icon: RxInstagramLogo,
-        link: "https://instagram.com/ablmazed",
+        link: "https://instagram.com",
       },
       {
         name: "Twitter",
         icon: RxTwitterLogo,
-        link: "https://twitter.com/ablmazed",
+        link: "https://twitter.com",
       },
       {
         name: "Linkedin",
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com/ablmazed",
+        link: "https://linkedin.com",
       },
     ],
   },
@@ -319,7 +328,7 @@ export const FOOTER_DATA = [
       {
         name: "Become Sponsor",
         icon: null,
-        link: "https://youtube.com/ablmazed",
+        link: "https://youtube.com",
       },
       {
         name: "Learning about me",
@@ -329,7 +338,7 @@ export const FOOTER_DATA = [
       {
         name: "Contact Me",
         icon: null,
-        link: "mailto:ablmazed@gmail.com",
+        link: "mailto:contact@example.com",
       },
     ],
   },
@@ -351,5 +360,5 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/ablmazed/ablmazed",
+  sourceCode: "https://github.com/sanidhyy/space-portfolio",
 };

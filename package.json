@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Abdul Mazed",
+    "email": "ablmazed@gmail.com",
+    "url": "https://github.com/ablmazed"
   },
   "description": "Welcome to my full stack Next.js 14 space portfolio.",
   "keywords": [
@@ -48,21 +48,21 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/space-portfolioit"
+    "url": "https://github.com/ablmaze/ablmazed"
   },
-  "homepage": "https://github.com/sanidhyy/space-portfolio#readme",
+  "homepage": "https://github.com/ablmaze/ablmazed-portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/space-portfolio/issues",
+    "url": "https://github.com/ablmaze/ablmazed/issues",
     "email": "sanidhya.verma12345@gmail.com"
   },
   "funding": [
     {
       "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
+      "url": "https://www.patreon.com/ablmazed"
     },
     {
       "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
+      "url": "https://www.buymeacoffee.com/ablmazed"
     }
   ],
   "dependencies": {

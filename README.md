@@ -1,205 +1,192 @@
-# Shiv's Portfolio [Live](https://shiv-s-portfolio.vercel.app) - 👌 Best NextJS Portfolio
+<a name="readme-top"></a>
 
-![Welcome Screen](https://shiv-s-portfolio.vercel.app/images/welcome-screen.png)
+# Modern Space Theme Portfolio using Next.js 14 and Three.js
 
-## Table of content
+![Modern Space Theme Portfolio using Next.js 14 and Three.js](/.github/images/img_main.png "Modern Space Theme Portfolio using Next.js 14 and Three.js")
 
-1. Features
-2. Sections
-3. Tech Stacks
-4. Getting Started
-5. How to Edit This Portfolio (Make It Your's)
-6. How to Implement a Live Chat System Using [Tawk.to](https://www.tawk.to/)
-7. Required APIs for This Project (All Are Free APIs)
-8. .env.local - file
-9. Contribute
+[![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
+[![GitHub license](https://flat.badgen.net/github/license/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/blob/main/LICENSE "GitHub license")
+[![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/commits/main "Maintenance")
+[![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/branches "GitHub branches")
+[![Github commits](https://flat.badgen.net/github/commits/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/commits "Github commits")
+[![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/issues "GitHub issues")
+[![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/pulls "GitHub pull requests")
+[![Netlify Status](https://api.netlify.com/api/v1/badges/451ed0e0-3541-474e-896a-4987e30a7722/deploy-status)](https://spaceportfolio.netlify.app/ "Netlify Status")
 
+<!-- Table of Contents -->
+<details>
 
-## 1. Features ✅
+<summary>
 
-- Simple and Clean Design
-- Dark and Light Theme
-- Mobile Responsiveness
-- Chat System - [tawk.to](https://www.tawk.to/)
-- Message by gmail - [nodemailer](https://nodemailer.com/about/)
+# :notebook_with_decorative_cover: Table of Contents
 
-## 2. Sections 🧱
+</summary>
 
-1. [Home | Intro | Welcome](https://shiv-s-portfolio.vercel.app)
-2. [Skills](https://shiv-s-portfolio.vercel.app/#skills)
-3. [Projects](https://shiv-s-portfolio.vercel.app/#projects)
-4. [Blogs](https://shiv-s-portfolio.vercel.app/#blogs)
-5. [My Journey](https://shiv-s-portfolio.vercel.app/#myJourney)
-6. [Apps](https://shiv-s-portfolio.vercel.app/#apps)
+- [Folder Structure](#bangbang-folder-structure)
+- [Getting Started](#toolbox-getting-started)
+- [Screenshots](#camera-screenshots)
+- [Tech Stack](#gear-tech-stack)
+- [Stats](#wrench-stats)
+- [Contribute](#raised_hands-contribute)
+- [Acknowledgements](#gem-acknowledgements)
+- [Buy Me a Coffee](#coffee-buy-me-a-coffee)
+- [Follow Me](#rocket-follow-me)
+- [Learn More](#books-learn-more)
+- [Deploy on Vercel](#page_with_curl-deploy-on-vercel)
+- [Give A Star](#star-give-a-star)
+- [Star History](#star2-star-history)
+- [Give A Star](#star-give-a-star)
 
-## 3. Tech Stack 💻
+</details>
 
-- [Next JS](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- Libraries:
+## :bangbang: Folder Structure
 
-  - [react-icons](https://react-icons.github.io/react-icons/search)
-  - [framer-motion](https://www.framer.com/)
-  - [axios](https://axios-http.com/docs/intro)
-  - [mongoose](https://mongoosejs.com/)
-  - [nodemailer](https://nodemailer.com/about)
-  - [react-responsive-carousel](https://react-responsive-carousel.js.org/)
-  - [react-responsive-masonry](https://www.npmjs.com/package/react-responsive-masonry)
-  - [react-syntax-highlighter](https://react-syntax-highlighter.github.io/react-syntax-highlighter/demo/)
+Here is the folder structure of this app.
 
-## 4. Getting Started ▶️
-
-Follow these steps to set up and run the project on your local machine.
-
-#### 1. Clone the Repository
-
-To get a local copy of this repository, run the following command in your terminal:
-
-```sh
-git clone https://github.com/iamshiv007/Next-Portfolio.git
+```bash
+space-portfolio/
+  |- app/
+    |-- favicon.ico
+    |-- globals.css
+    |-- layout.tsx
+    |-- page.tsx
+  |- components/
+    |-- main/
+        |--- encryption.tsx
+        |--- footer.tsx
+        |--- hero.tsx
+        |--- navbar.tsx
+        |--- projects.tsx
+        |--- skills.tsx
+        |--- star-background.tsx
+    |-- sub/
+        |--- hero-content.tsx
+        |--- project-card.tsx
+        |--- skill-data-provider.tsx
+        |--- skill-text.tsx
+  |- config/
+    |-- index.ts
+  |- constants/
+    |-- index.ts
+  |- lib/
+    |-- motion.ts
+    |-- utils.ts
+  |- public/
+    |-- projects/
+    |-- skills/
+    |-- videos/
+    |-- hero-bg.svg
+    |-- lock-main.png
+    |-- lock-top.png
+    |-- logo.png
+  |- .eslintrc.json
+  |- .gitignore
+  |- next.config.js
+  |- package-lock.json
+  |- package.json
+  |- postcss.config.js
+  |- tailwind.config.ts
+  |- tsconfig.json
 ```
 
-#### 2. Navigate to the Project
+<br />
 
-Change your working directory to the project folder:
+## :toolbox: Getting Started
 
-```sh
-cd next-portfolio
-```
+1. Make sure **Git** and **NodeJS** is installed.
 
-#### 3. Install Dependencies
+2. Clone this repository to your local computer.
 
-Install the required packages using npm:
+3. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
 
-```sh
-npm i
-```
+4. Now app is fully configured 👍 and you can start using this app using `npm run dev` or `yarn dev`.
 
-#### 4. Start the Project
+## :camera: Screenshots:
 
-Run the following command to launch the Next.js project in your local environment:
+![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
 
-```sh
-npm run dev
-```
+![Showcase your skills](/.github/images/img2.png "Showcase your skills")
 
-#### 5. Access the Project
+![Built with Typescript](/.github/images/img3.png "Built with Typescript")
 
-Open your web browser and go to [http://localhost:3000](http://localhost:3000) to view the project.
+![Showcase your projects](/.github/images/img4.png "Showcase your projects")
 
-That's it! You're now ready to explore the project locally.
+## :gear: Tech Stack
 
-Happy coding! 🚀
+[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![Typescript](https://skillicons.dev/icons?i=ts "Typescript")](https://www.typescriptlang.org/ "Typescript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify") [![Three.js](https://skillicons.dev/icons?i=threejs "Three.js")](https://threejs.org/ "Three.js")
 
+## :wrench: Stats
 
-## 5. How to Edit This Portfolio (Make It Your's)
+[![Stats for Space Portfolio](/.github/images/stats.svg "Stats for Space Portfolio")](https://pagespeed.web.dev/analysis/https-spaceportfolio-netlify-app/2efbmg117d "Stats for Space Portfolio")
 
-*Note :-This is a beginner's guide for those who have never worked on a Next.js project before. If you can understand the project, it's in your hands to make changes and create a portfolio that's 10 times better. You can use its clone for a quick start.*
+## :raised_hands: Contribute
 
-### 1. Your Name and Photo
+You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
 
-In the `root` directory, you'll find a `sections` folder. Inside this folder, locate the `Intro.jsx` file.
+## :gem: Acknowledgements
 
-Within the `intro` file, update the following details:
-- Shivraj - Your Name
-- Web Developer - Profession
-- /images/cartoon0.png - Your Photo
+Useful resources and dependencies that are used in Space Portfolio.
 
-Remember to have your photo uploaded in the `images` folder located within the `public` directory.
+- [@heroicons/react](https://www.npmjs.com/package/@heroicons/react): ^2.1.1
+- [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^9.93.0
+- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.15.13
+- [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
+- [framer-motion](https://www.npmjs.com/package/framer-motion): ^10.17.12
+- [next](https://www.npmjs.com/package/next): 14.0.4
+- [react](https://www.npmjs.com/package/react): ^18
+- [react-dom](https://www.npmjs.com/package/react-dom): ^18
+- [react-icons](https://www.npmjs.com/package/react-icons): ^5.0.1
+- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^9.5.3
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.0
+- [three](https://www.npmjs.com/package/three): ^0.160.0
+- [@types/node](https://www.npmjs.com/package/@types/node): ^20
+- [@types/react](https://www.npmjs.com/package/@types/react): ^18
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
+- [eslint](https://www.npmjs.com/package/eslint): ^8
+- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 14.0.4
+- [postcss](https://www.npmjs.com/package/postcss): ^8
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
+- [typescript](https://www.npmjs.com/package/typescript): ^5
 
-### 2. Skills
+## :coffee: Buy Me a Coffee
 
-In the `root` directory, you'll find a `constants` folder. Inside this folder, locate the `SkillsData.jsx`
+[<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" width="200" />](https://www.buymeacoffee.com/sanidhy "Buy me a Coffee")
 
-- Add or remove skills according to your preferences.
-- Use Desire icon from `react-icons` library.
-- Give desire color to icon.
+## :rocket: Follow Me
 
-### 3. Projects
+[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Check+out+this+amazing+app:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2Fspace-portfolio "Tweet")
+[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCNAz_hUVBG2ZUN8TVm0bmYw)](https://www.youtube.com/@OPGAMER. "Subscribe my YouTube Channel")
 
-Just like with Skills, we have a `ProjectsData.js` file located in the `constants` folder.
+## :books: Learn More
 
-All you need to do is replace the existing data with your own (name: Your project name, url: Project Live URL, imageUrl: Image URL from the `images` folder in the public `directory`).
+To learn more about Next.js, take a look at the following resources:
 
-### 4. My Journey
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Similar to Skills and Projects, you only need to customize the data in the `JourneyData.jsx` file according to yourself.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### 5. Apps 
+## :page_with_curl: Deploy on Vercel
 
-You don't need to change the app data, but if you want, you can create similar easy apps and replace the data in the `AppsData.jsx` file.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Suggetion for apps :- To-do List App, Weather App, Random Quote Generator, Random Jokes Generator, Basic Calculator, Countdown Timer, Recipe Finder etc.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-> Note :- If you're not able to customize the portfolio or run the project in your local environment, **don't worry**. It's not a journey of just 1 or 2 days, it takes time. For me, I was able to create it after 1 year of consistent learning. If you're not able to use its clone, just leave it and keep learning. You'll create a better portfolio or project one day.
+## :star: Give A Star
 
-<div align="center">
-  <h4>⭐️ If You want to show your appreciation, please give this repository a star.</h4>
-</div>
+You can also give this repository a star to show more people and they can use this repository.
 
-## 6. How to Implement a Live Chat System Using [Tawk.to](https://www.tawk.to/)
+## :star2: Star History
 
-I'm excited to introduce you to this amazing feature, and the best part is, it's completely free!
+<a href="https://star-history.com/#sanidhyy/space-portfolio&Timeline">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanidhyy/space-portfolio&type=Timeline&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanidhyy/space-portfolio&type=Timeline" />
+  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanidhyy/space-portfolio&type=Timeline" />
+</picture>
+</a>
 
-Follow these steps to set up your live chat system:
-
-**Step 1:** Sign up on [tawk.to](https://dashboard.tawk.to/signup).
-
-**Step 2:** Complete the simple 4-step process to create your free account.
-
-**Step 3:** Once you've completed the process, copy the code snippet provided at the end.
-
-**Step 4:** Now, integrate the copied code into your application:
-
-Navigate to the `Components` directory, locate the `ChatSystem.jsx` file, and inside the `useEffect` function, paste the copied code.
-
-By following these steps, you'll have an efficient live chat system up and running in no time, enhancing your user experience and engagement.
-
-
-## 7. Required APIs for This Project (All Are Free APIs)
-
-1. **ChatGPT API** from RapidAPI - [Details](https://rapidapi.com/haxednet/api/chatgpt-api8)
-
-2. **Microsoft Translator API** from RapidAPI - [Details](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text)
-
-3. **Google News API** from Google - [Details](https://newsapi.org/s/google-news-api)
-
-4. **Quiz API** from Trivia API (No API Key Required) - [Details](https://opentdb.com/api_config.php)
-
-5. **Images API** from Pexels API - [Details](https://www.pexels.com/api/)
-
-## 8. .env.local - file
-
-After obtaining the above mentioned API, create a `.env.local` file and put values and restart your project.
-
-```sh
-const RAPID_API_KEY = VALUE_XXXX
-const GOOGLE_NEWS_API_KEY = VALUE_XXXX
-const PEXELS_API_KEY = VALUE_XXXX
-const MONGODB_CONNECTION_STRING = VALUE_XXXX
-```
-
-
-## 9. Contribute 🎁
-
-Thank you for checking out my portfolio! I invite you to join in and make it your own. Feel free to contribute by editing the information, images, and name to personalize it according to your skills and achievements.
-
-### How to Contribute:
-
-1. **Fork the Repository:** Start by forking this repository to your GitHub account. This will create a copy of the portfolio project in your account.
-
-2. **Make Your Changes:** Edit the portfolio content, update images, and customize details like your name, skills, projects, and journey.
-
-3. **Preview Your Portfolio:** You can locally preview your changes by following the setup instructions mentioned in the repository's README.
-
-4. **Create a Pull Request:** Once you're satisfied with your changes, submit a pull request back to the original repository. I'll review your contributions and, if everything looks good, merge your changes.
-
-### Why Contribute:
-
-- Showcase Your Work: Share your accomplishments and projects with the world through your personalized portfolio.
-- Learn and Improve: Practice your coding skills while experimenting with HTML, CSS, and JavaScript.
-- Join the Community: Connect with others who are also building their portfolios, and receive feedback and support.
-
-Remember, your portfolio is a reflection of your unique skills and experiences. Personalize it to make it truly yours!
-
-Happy coding and designing! 🚀🎨
+<br />
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -58,7 +58,7 @@ export const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/amazon.png"
+          src="/abdulmazed.png"
           alt="work icons"
           height={650}
           width={650}

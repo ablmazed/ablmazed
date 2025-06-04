@@ -1,14 +1,10 @@
-"use client";
+'use client'
 
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { SparklesIcon } from '@heroicons/react/24/solid'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
 
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/lib/motion";
+import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/lib/motion'
 
 export const HeroContent = () => {
   return (
@@ -33,10 +29,10 @@ export const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Providing{" "}
+            Providing{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               the best
-            </span>{" "}
+            </span>{' '}
             project experience.
           </span>
         </motion.div>
@@ -62,7 +58,7 @@ export const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/hero-bg.svg"
+          src="/amazon.png"
           alt="work icons"
           height={650}
           width={650}
@@ -71,5 +67,5 @@ export const HeroContent = () => {
         />
       </motion.div>
     </motion.div>
-  );
-};
+  )
+}
